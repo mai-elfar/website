@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-TECH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">TECH SHOP</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="signup.html">My_Account</a></li>
+                <li><a href="signin.html" onclick="logout()">Sign_Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome To Tech Shop</h1>
+            <p>Discover best prouducts at great prices </p>
+            <a href="#products" class="btn"
+                style="display: inline-block; padding: 15px 30px; font-size: 1.2rem;">Explore</a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-boxes"></i> Our_Products
+            </h2>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/laptop.jfif" alt="laptop">
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop</h3>
+                        <p class="product-price">$1299</p>
+                        <button class="order-btn" onclick="orderNow('laptop', 1299)">
+                            <i class="fas fa-shopping-cart"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/ipone.jfif" alt="iphone">
+                    </div>
+                    <div class="product-info">
+                        <h3>smart phone</h3>
+                        <p class="product-price">$899</p>
+                        <button class="order-btn" onclick="orderNow('iphone', 899)">
+                            <i class="fas fa-shopping-cart"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/headphone.jpg" alt="headphone" style="object-position: center 40%;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Headphone</h3>
+                        <p class="product-price">$199</p>
+                        <button class="order-btn" onclick="orderNow('headphone', 199)">
+                            <i class="fas fa-shopping-cart"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/camera.jpg" alt="camera">
+                    </div>
+                    <div class="product-info">
+                        <h3>camera</h3>
+                        <p class="product-price">$1599</p>
+                        <button class="order-btn" onclick="orderNow('camera', 1599)">
+                            <i class="fas fa-shopping-cart"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/smart watch.jfif" alt="smart watch">
+                    </div>
+                    <div class="product-info">
+                        <h3>smart watch</h3>
+                        <p class="product-price">$399</p>
+                        <button class="order-btn" onclick="orderNow('smart watch', 399)">
+                            <i class="fas fa-shopping-cart"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/game.jfif" alt="game devices">
+                    </div>
+                    <div class="product-info">
+                        <h3>PlayStation 5 DualSense Edge Wireless Controller</h3>
+                        <p class="product-price">$2499</p>
+                        <button class="order-btn" onclick="orderNow('game devices', 2499)">
+                            <i class="fas fa-shopping-cart"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: #14213d; color: white; text-align: center; padding: 2rem 0; margin-top: 4rem;">
+        <div class="container">
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                <a href="home.html" style="color: white; text-decoration: none;">Home</a>
+                <a href="order.html" style="color: white; text-decoration: none;">Order</a>
+                <a href="contact.html" style="color: white; text-decoration: none;">Contact_Us</a>
+                <a href="signup.html" style="color: white; text-decoration: none;">My_Account</a>
+                <a href="signin.html" style="color: white; text-decoration: none;">Sign_In</a>
+            </div>
+            <p>&copy; TECH SHOP ALL RIGHTS RESERVED 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
